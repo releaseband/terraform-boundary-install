@@ -1,9 +1,9 @@
-data "kubernetes_service" "nlb" {
-  depends_on = [kubernetes_service.boundary]
+data "kubernetes_service" "main" {
+  depends_on = [kubernetes_service.main]
   metadata {
-    name      = "boundary"
-    namespace = "boundary"
-  }
+    name      = local.app
+    namespace = kubernetes_namespace.main.metadata[0].name
+      }
 }
 
 data "aws_lb" "nlb" {
@@ -11,7 +11,7 @@ data "aws_lb" "nlb" {
 }
 
 locals {
-  nlb_hostname = regex("[^-/?#]+", data.kubernetes_service.nlb.status[0].load_balancer[0].ingress[0].hostname)
+  nlb_hostname = regex("[^-/?#]+", data.kubernetes_service.main.status[0].load_balancer[0].ingress[0].hostname)
 }
 
 data "aws_route53_zone" "main" {

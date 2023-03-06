@@ -19,27 +19,27 @@ provider "helm" {
 
 
 terraform {
-required_version = "1.3.6"
+  required_version = ">= 1.0"
   required_providers {
     kubernetes = {
-      source = "hashicorp/kubernetes"
-      version = "2.16.1"
+      source  = "hashicorp/kubernetes"
+      version = ">= 2.16"
     }
     random = {
-      source = "hashicorp/random"
-      version = "3.4.3"
+      source  = "hashicorp/random"
+      version = ">= 3.4"
     }
     aws = {
-      source = "hashicorp/aws"
-      version = "4.48.0"
+      source  = "hashicorp/aws"
+      version = ">= 4.48"
     }
     vault = {
-      source = "hashicorp/vault"
-      version = "3.11.0"
+      source  = "hashicorp/vault"
+      version = ">= 3.11"
     }
     helm = {
-      source = "hashicorp/helm"
-      version = "2.8.0"
+      source  = "hashicorp/helm"
+      version = ">= 2.8"
     }
   }
 }
