@@ -430,6 +430,9 @@ resource "kubernetes_stateful_set" "postgres" {
       "app"     = local.app
       "service" = "postgres"
     }
+    annotations = {
+      "polaris.fairwinds.com/runAsRootAllowed-exempt" = "true"
+    }
   }
   spec {
     replicas = 1
