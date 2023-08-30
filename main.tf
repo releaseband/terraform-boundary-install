@@ -135,7 +135,7 @@ listener "tcp" {
               memory = "500M"
             }
             requests = {
-              cpu    = "10m"
+              cpu    = "3m"
               memory = "60M"
             }
           }
