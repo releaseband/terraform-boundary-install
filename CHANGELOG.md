@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/releaseband/terraform-boundary-install/compare/v2.0.2...v2.0.3) (2023-09-20)
+
+
+### Bug Fixes
+
+* **main.tf:** increase memory request from 60M to 120M to handle increased workload efficiently ([d1b6e02](https://github.com/releaseband/terraform-boundary-install/commit/d1b6e02ff4877bc313abe3dc5aef577d899ffd76))
+
 ## [2.0.2](https://github.com/releaseband/terraform-boundary-install/compare/v2.0.1...v2.0.2) (2023-08-30)
 
 
