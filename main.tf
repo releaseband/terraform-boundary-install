@@ -136,7 +136,7 @@ listener "tcp" {
             }
             requests = {
               cpu    = "3m"
-              memory = "60M"
+              memory = "120M"
             }
           }
           env {
