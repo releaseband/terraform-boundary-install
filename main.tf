@@ -68,6 +68,8 @@ resource "kubernetes_deployment" "main" {
 disable_mlock = true
 controller {
   name = "controller-1"
+  auth_token_time_to_live  = "240h"
+  auth_token_time_to_stale = "72h"
   database {
     url = "postgresql://boundary:{{ .Data.postgres_pass }}@postgres:5432/boundary?sslmode=disable"
   }
