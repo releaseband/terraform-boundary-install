@@ -3,7 +3,7 @@ data "kubernetes_service" "main" {
   metadata {
     name      = local.app
     namespace = kubernetes_namespace.main.metadata[0].name
-      }
+  }
 }
 
 data "aws_lb" "nlb" {
