@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/releaseband/terraform-boundary-install/compare/v2.0.3...v2.1.0) (2024-01-31)
+
+
+### Features
+
+* update token ttl ([0a9459d](https://github.com/releaseband/terraform-boundary-install/commit/0a9459dbd2adf2c4d4fb048e5c51c11fe6c1ca34))
+
 ## [2.0.3](https://github.com/releaseband/terraform-boundary-install/compare/v2.0.2...v2.0.3) (2023-09-20)
 
 
