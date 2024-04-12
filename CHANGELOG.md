@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.3](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.2...v2.1.3) (2024-04-12)
+
+
+### Bug Fixes
+
+* update README ([7718970](https://github.com/releaseband/terraform-boundary-install/commit/7718970bd72a27ce12b4eb05897ae7aa00c0c530))
+
 ## [2.1.2](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.1...v2.1.2) (2024-04-12)
 
 
