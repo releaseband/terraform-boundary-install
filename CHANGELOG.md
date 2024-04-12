@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.1...v2.1.2) (2024-04-12)
+
+
+### Bug Fixes
+
+* refactored containers resources variables ([aa1b8fa](https://github.com/releaseband/terraform-boundary-install/commit/aa1b8fa7cbe0df6521857b11b9b93f148809db0a))
+
 ## [2.1.1](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.0...v2.1.1) (2024-03-28)
 
 
