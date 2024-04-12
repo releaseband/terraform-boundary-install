@@ -73,10 +73,12 @@ terraform state mv module.foundation.module.boundary.aws_iam_access_key.boundary
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_boundary_image"></a> [boundary\_image](#input\_boundary\_image) | Boundary image | `string` | `"hashicorp/boundary:0.11"` | no |
 | <a name="input_domain_name"></a> [domain\_name](#input\_domain\_name) | Domain for dns records | `string` | n/a | yes |
 | <a name="input_eks_cluster_name"></a> [eks\_cluster\_name](#input\_eks\_cluster\_name) | Name of EKS cluster for provider config and nodeselectors | `string` | n/a | yes |
+| <a name="input_boundary_image"></a> [boundary\_image](#input\_boundary\_image) | Boundary image | `string` | `"hashicorp/boundary:0.11"` | no |
 | <a name="input_postgres_image"></a> [postgres\_image](#input\_postgres\_image) | Postgres image | `string` | `"postgres:13.8"` | no |
+| <a name="input_boundary_resources"></a> [boundary\_resources](#input\_boundary\_resources) | boundary container resources | `map(any)` | n/a | yes |
+| <a name="input_postgres_resources"></a> [postgres\_resources](#input\_postgres\_resources) | postgres container resources | `map(any)` | n/a | yes |
 | <a name="input_shell_image"></a> [shell\_image](#input\_shell\_image) | Shell image for pvc fix | `string` | `"bitnami/bitnami-shell:10-debian-10"` | no |
 | <a name="input_vault_token"></a> [vault\_token](#input\_vault\_token) | Token for vault provider | `string` | n/a | yes |
 
