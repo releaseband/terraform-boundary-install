@@ -133,12 +133,12 @@ listener "tcp" {
           args              = ["server", "-config", "/vault/secrets/main"]
           resources {
             limits = {
-              cpu    = "500m"
-              memory = "700M"
+              cpu    = var.boundary_resources.limits.cpu
+              memory = var.boundary_resources.limits.memory
             }
             requests = {
-              cpu    = "3m"
-              memory = "500M"
+              cpu    = var.boundary_resources.requests.cpu
+              memory = var.boundary_resources.requests.memory
             }
           }
           env {
@@ -472,12 +472,12 @@ resource "kubernetes_stateful_set" "postgres" {
           image_pull_policy = "Always"
           resources {
             limits = {
-              cpu    = "500m"
-              memory = "500M"
+              cpu    = var.postgres_resources.limits.cpu
+              memory = var.postgres_resources.limits.memory
             }
             requests = {
-              cpu    = "10m"
-              memory = "300M"
+              cpu    = var.postgres_resources.requests.cpu
+              memory = var.postgres_resources.requests.memory
             }
           }
           port {

@@ -34,3 +34,11 @@ variable "shell_image" {
   type        = string
 }
 
+variable "boundary_resources" {
+  type        = map(any)
+  description = "boundary container resources"
+}
+variable "postgres_resources" {
+  type        = map(any)
+  description = "postgres container resources"
+}
