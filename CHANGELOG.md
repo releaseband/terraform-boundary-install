@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.4](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.3...v2.1.4) (2024-04-22)
+
+
+### Bug Fixes
+
+* add linkerd annotations ([641a0d5](https://github.com/releaseband/terraform-boundary-install/commit/641a0d571a0e321af0c12615a0088832541e59e2))
+
 ## [2.1.3](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.2...v2.1.3) (2024-04-12)
 
 
