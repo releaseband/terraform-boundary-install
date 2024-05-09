@@ -123,9 +123,9 @@ listener "tcp" {
           {{- end }}
           EOF
           "config.linkerd.io/proxy-cpu-request"            = "2m"
-          "config.linkerd.io/proxy-cpu-limit"              = "4m"
+          "config.linkerd.io/proxy-cpu-limit"              = "100m"
           "config.linkerd.io/proxy-memory-request"         = "10Mi"
-          "config.linkerd.io/proxy-memory-limit"           = "20Mi"
+          "config.linkerd.io/proxy-memory-limit"           = "200Mi"
         }
       }
 
