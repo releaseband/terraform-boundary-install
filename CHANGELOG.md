@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.5](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.4...v2.1.5) (2024-05-09)
+
+
+### Bug Fixes
+
+* linkerd limits ([cef7b0a](https://github.com/releaseband/terraform-boundary-install/commit/cef7b0a5cfb870390eceea2da656e85bf6d7cc01))
+
 ## [2.1.4](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.3...v2.1.4) (2024-04-22)
 
 
