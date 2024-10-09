@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.6](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.5...v2.1.6) (2024-10-09)
+
+
+### Bug Fixes
+
+* dapr config ([f0e9b88](https://github.com/releaseband/terraform-boundary-install/commit/f0e9b88da93835202294b842fdc76f310c4d58bb))
+
 ## [2.1.5](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.4...v2.1.5) (2024-05-09)
 
 
