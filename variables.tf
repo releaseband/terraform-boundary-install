@@ -17,7 +17,7 @@ variable "domain_name" {
 }
 
 variable "boundary_image" {
-  default     = "hashicorp/boundary:0.11"
+  default     = "hashicorp/boundary:0.17.2"
   description = "Boundary image"
   type        = string
 }

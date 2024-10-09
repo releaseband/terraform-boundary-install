@@ -10,7 +10,7 @@ resource "kubernetes_namespace" "main" {
     }
     name = local.app
     annotations = {
-      "linkerd.io/inject"                  = "enabled"
+      "linkerd.io/inject"                  = "disabled"
       "config.linkerd.io/proxy-await"      = "enabled"
       "config.linkerd.io/proxy-log-format" = "json"
     }
@@ -71,7 +71,7 @@ controller {
   auth_token_time_to_live  = "240h"
   auth_token_time_to_stale = "72h"
   database {
-    url = "postgresql://boundary:{{ .Data.postgres_pass }}@postgres:5432/boundary?sslmode=disable"
+    url = "postgresql://boundary:{{ .Data.postgres_pass }}@postgres:5432/boundary?sslmode=disable&connect_timeout=30"
   }
 }
   kms "awskms" {
