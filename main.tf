@@ -583,7 +583,7 @@ resource "kubernetes_stateful_set" "postgres" {
         storage_class_name = "gp3-resized"
         resources {
           requests = {
-            storage = "1Gi"
+            storage = "10Gi"
           }
         }
       }
