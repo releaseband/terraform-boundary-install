@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.7](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.6...v2.1.7) (2024-12-05)
+
+
+### Bug Fixes
+
+* **terraform-boundary-install:** increase storage from 1Gb to 10Gb ([9a3e6d8](https://github.com/releaseband/terraform-boundary-install/commit/9a3e6d87c7a5b831e863f7c23c64333eec544814))
+
 ## [2.1.6](https://github.com/releaseband/terraform-boundary-install/compare/v2.1.5...v2.1.6) (2024-10-09)
 
 
